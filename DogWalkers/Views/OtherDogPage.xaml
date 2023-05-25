@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DogWalkers.Views.OtherDogPage"
+             Title="OtherDogPage">
+    <VerticalStackLayout>
+        <Label Text="Name" />
+		<Entry Text="{Binding Name}" IsEnabled="False" />
+		<Label Text="Bio" />
+		<Editor Text="{Binding Bio}" IsEnabled="False" />
+		<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+			<Button Text="Back" Clicked="OnBack_Clicked" />
+		</StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
